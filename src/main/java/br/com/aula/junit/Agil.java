@@ -7,11 +7,11 @@ public class Agil {
     public double calcularPert(double horasDificeis, double horasNormais, double horasFaceis){
         if(validarNumerosPositivos(horasDificeis) || validarNumerosPositivos(horasFaceis)  ||
                 validarNumerosPositivos(horasNormais)){
-            throw new RuntimeException("Horas negativas não são aceitas");
-        }
-        double resultado = (horasDificeis + horasNormais + horasFaceis)/6;
+            double resultado = (horasDificeis + horasNormais + horasFaceis)/6;
+            return resultado;
 
-        return resultado;
+        }
+        throw new RuntimeException("Horas negativas não são aceitas");
     }
 
     public boolean validarNumerosPositivos(double numero){
