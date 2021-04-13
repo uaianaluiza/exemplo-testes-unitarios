@@ -5,7 +5,7 @@ import java.sql.Struct;
 public class Agil {
 
     public double calcularPert(double horasDificeis, double horasNormais, double horasFaceis){
-        if(validarNumerosPositivos(horasDificeis) || validarNumerosPositivos(horasFaceis)  ||
+        if(validarNumerosPositivos(horasDificeis) && validarNumerosPositivos(horasFaceis)  &&
                 validarNumerosPositivos(horasNormais)){
             double resultado = (horasDificeis + horasNormais + horasFaceis)/6;
             return resultado;
